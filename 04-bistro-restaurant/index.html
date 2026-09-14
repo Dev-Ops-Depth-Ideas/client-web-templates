@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le Bistrot - Live Demo</title>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Bistrot Gourmet | Fine Dining & Wine Bar</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between font-sans">
-  <header class="border-b border-slate-800 px-6 py-4 flex justify-between items-center max-w-6xl mx-auto w-full">
-    <a href="../" class="text-xs text-slate-400 hover:text-white transition">&larr; Πίσω στον Κατάλογο</a>
-    <div class="font-bold text-amber-400">Le Bistrot</div>
-    <a href="#contact" class="text-xs bg-amber-500 text-slate-950 px-3 py-1.5 rounded font-semibold hover:opacity-90 transition">Επικοινωνία</a>
-  </header>
-  <main class="max-w-4xl mx-auto px-6 py-24 text-center flex-1 flex flex-col justify-center items-center">
-    <span class="text-xs uppercase tracking-widest text-amber-400 border border-amber-500/30 px-3 py-1 rounded-full mb-6 bg-amber-950/40">
-      04-bistro-restaurant
-    </span>
-    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-      Le Bistrot
-    </h1>
-    <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8">
-      Κομψό μενού, κρατήσεις & ώρες λειτουργίας. Πλήρως προσαρμόσιμο σε γραφικά, κείμενα και λειτουργίες για τις ανάγκες σας.
-    </p>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="#contact" class="bg-amber-500 text-slate-950 font-semibold px-6 py-3 rounded-lg shadow-lg hover:opacity-95 transition">
-        Ζητήστε Προσφορά
-      </a>
-      <a href="../" class="border border-slate-800 hover:bg-slate-900 text-slate-300 font-semibold px-6 py-3 rounded-lg transition">
-        Άλλα Πρότυπα
-      </a>
+<body class="bg-neutral-950 text-neutral-200 font-serif">
+  <!-- Nav -->
+  <nav class="border-b border-amber-900/30 px-6 py-4 flex justify-between items-center max-w-6xl mx-auto">
+    <div class="text-2xl font-bold tracking-widest text-amber-400 uppercase">Le Bistrot</div>
+    <div class="flex gap-6 text-sm tracking-wider uppercase font-sans text-neutral-400">
+      <a href="#menu" class="hover:text-amber-300">Μενού</a>
+      <a href="#reserve" class="hover:text-amber-300">Κρατήσεις</a>
+      <a href="#hours" class="hover:text-amber-300">Ωράριο</a>
     </div>
-  </main>
-  <footer class="border-t border-slate-900 py-6 text-center text-xs text-slate-600">
-    <p>&copy; 2026 Le Bistrot &bull; Web Design & Development</p>
-  </footer>
+  </nav>
+
+  <!-- Hero -->
+  <header class="py-24 text-center px-4 max-w-3xl mx-auto">
+    <span class="text-xs uppercase tracking-widest text-amber-500 font-sans">Αυθεντική Μεσογειακή Γαστρονομία</span>
+    <h1 class="text-5xl md:text-6xl font-normal mt-4 mb-6 text-neutral-100">Γεύσεις που αφηγούνται μια ιστορία.</h1>
+    <p class="text-neutral-400 font-sans leading-relaxed">Φρέσκα εποχιακά υλικά, επιλεγμένα κρασιά και εκλεπτυσμένη ατμόσφαιρα στην καρδιά της πόλης.</p>
+    <div class="mt-8 flex justify-center gap-4 font-sans text-sm">
+      <a href="#reserve" class="bg-amber-600 hover:bg-amber-500 text-neutral-950 font-bold px-6 py-3 rounded">Κράτηση Τραπεζιού</a>
+      <a href="#menu" class="border border-neutral-700 hover:border-amber-500 px-6 py-3 rounded">Δείτε το Μενού</a>
+    </div>
+  </header>
+
+  <!-- Menu Preview Section -->
+  <section id="menu" class="py-16 bg-neutral-900/50 border-y border-neutral-900 font-sans px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-serif text-center text-amber-400 mb-12">Επιλογές Chef Specials</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="flex justify-between border-b border-neutral-800 pb-3">
+          <div><h4 class="font-bold text-white">Φιλέτο Μόσχου Black Angus</h4><p class="text-xs text-neutral-400">Πουρές τρούφας & σάλτσα porto</p></div>
+          <span class="text-amber-400 font-bold">€34</span>
+        </div>
+        <div class="flex justify-between border-b border-neutral-800 pb-3">
+          <div><h4 class="font-bold text-white">Ριζότο Άγριων Μανιταριών</h4><p class="text-xs text-neutral-400">Παρμεζάνα 24μηνης ωρίμανσης</p></div>
+          <span class="text-amber-400 font-bold">€22</span>
+        </div>
+        <div class="flex justify-between border-b border-neutral-800 pb-3">
+          <div><h4 class="font-bold text-white">Φρέσκος Σολομός Glazed</h4><p class="text-xs text-neutral-400">Σπαράγγια & σάλτσα εσπεριδοειδών</p></div>
+          <span class="text-amber-400 font-bold">€26</span>
+        </div>
+        <div class="flex justify-between border-b border-neutral-800 pb-3">
+          <div><h4 class="font-bold text-white">Τάρτα Bitter Σοκολάτας</h4><p class="text-xs text-neutral-400">Παγωτό βανίλια Μαδαγασκάρης</p></div>
+          <span class="text-amber-400 font-bold">€11</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Box -->
+  <section id="reserve" class="py-20 max-w-xl mx-auto px-6 font-sans text-center">
+    <h3 class="text-2xl font-serif text-white mb-2">Κάντε την Κράτησή σας Online</h3>
+    <p class="text-sm text-neutral-400 mb-8">Άμεση επιβεβαίωση μέσω SMS / Email</p>
+    <form class="grid grid-cols-2 gap-4 text-left">
+      <input type="text" placeholder="Ονοματεπώνυμο" class="col-span-2 bg-neutral-900 border border-neutral-800 rounded p-3 text-sm text-white focus:border-amber-500 outline-none">
+      <input type="tel" placeholder="Τηλέφωνο" class="bg-neutral-900 border border-neutral-800 rounded p-3 text-sm text-white focus:border-amber-500 outline-none">
+      <select class="bg-neutral-900 border border-neutral-800 rounded p-3 text-sm text-white focus:border-amber-500 outline-none">
+        <option>2 Άτομα</option><option>4 Άτομα</option><option>6+ Άτομα</option>
+      </select>
+      <input type="date" class="bg-neutral-900 border border-neutral-800 rounded p-3 text-sm text-white focus:border-amber-500 outline-none">
+      <input type="time" class="bg-neutral-900 border border-neutral-800 rounded p-3 text-sm text-white focus:border-amber-500 outline-none">
+      <button type="button" class="col-span-2 bg-amber-500 hover:bg-amber-400 text-neutral-950 font-bold py-3 rounded mt-2">Επιβεβαίωση Κράτησης</button>
+    </form>
+  </section>
 </body>
 </html>
