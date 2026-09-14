@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studio Mono - Live Demo</title>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Mono | Design & Digital Brand Direction</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between font-sans">
-  <header class="border-b border-slate-800 px-6 py-4 flex justify-between items-center max-w-6xl mx-auto w-full">
-    <a href="../" class="text-xs text-slate-400 hover:text-white transition">&larr; Πίσω στον Κατάλογο</a>
-    <div class="font-bold text-violet-400">Studio Mono</div>
-    <a href="#contact" class="text-xs bg-violet-500 text-slate-950 px-3 py-1.5 rounded font-semibold hover:opacity-90 transition">Επικοινωνία</a>
+<body class="bg-[#0a0a0c] text-neutral-100 font-sans selection:bg-neutral-100 selection:text-black">
+  <header class="px-8 py-8 flex justify-between items-center max-w-7xl mx-auto">
+    <div class="text-2xl font-black tracking-tighter uppercase">STUDIO MONO&reg;</div>
+    <div class="flex items-center gap-6 text-sm">
+      <a href="#work" class="hover:underline">Works</a>
+      <a href="#services" class="hover:underline">Services</a>
+      <a href="#about" class="hover:underline">Manifesto</a>
+      <a href="#contact" class="bg-white text-black px-4 py-2 rounded-full font-bold text-xs uppercase hover:bg-neutral-200">Start a Project</a>
+    </div>
   </header>
-  <main class="max-w-4xl mx-auto px-6 py-24 text-center flex-1 flex flex-col justify-center items-center">
-    <span class="text-xs uppercase tracking-widest text-violet-400 border border-violet-500/30 px-3 py-1 rounded-full mb-6 bg-violet-950/40">
-      03-creative-agency
-    </span>
-    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-      Studio Mono
+
+  <main class="max-w-7xl mx-auto px-8 pt-20 pb-32">
+    <p class="text-neutral-500 uppercase tracking-widest text-xs font-mono mb-4">Independent Digital Agency &bull; Athens / London</p>
+    <h1 class="text-5xl md:text-8xl font-black tracking-tight leading-[0.95] max-w-5xl mb-16">
+      WE CRAFT UNFORGETTABLE DIGITAL IDENTITIES.
     </h1>
-    <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8">
-      Showcase για διαφημιστικά & creative agencies. Πλήρως προσαρμόσιμο σε γραφικά, κείμενα και λειτουργίες για τις ανάγκες σας.
-    </p>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="#contact" class="bg-violet-500 text-slate-950 font-semibold px-6 py-3 rounded-lg shadow-lg hover:opacity-95 transition">
-        Ζητήστε Προσφορά
-      </a>
-      <a href="../" class="border border-slate-800 hover:bg-slate-900 text-slate-300 font-semibold px-6 py-3 rounded-lg transition">
-        Άλλα Πρότυπα
-      </a>
+
+    <!-- Selected Case Studies -->
+    <div class="grid md:grid-cols-2 gap-12 pt-12 border-t border-neutral-800">
+      <article class="space-y-4">
+        <div class="h-80 bg-neutral-900 border border-neutral-800 rounded-lg flex items-center justify-center text-neutral-600 font-mono text-sm">
+          [ Case Study: Minimal Watch Brand ]
+        </div>
+        <div class="flex justify-between items-baseline">
+          <h3 class="text-2xl font-bold">KRONOS Horology</h3>
+          <span class="text-xs text-neutral-500 font-mono">E-Commerce & 3D WebGL</span>
+        </div>
+        <p class="text-neutral-400 text-sm">Πλήρες rebranding, bespoke Shopify Storefront και custom 3D configurator.</p>
+      </article>
+
+      <article class="space-y-4">
+        <div class="h-80 bg-neutral-900 border border-neutral-800 rounded-lg flex items-center justify-center text-neutral-600 font-mono text-sm">
+          [ Case Study: FinTech App Interface ]
+        </div>
+        <div class="flex justify-between items-baseline">
+          <h3 class="text-2xl font-bold">Vault Capital</h3>
+          <span class="text-xs text-neutral-500 font-mono">Design System & Mobile UI</span>
+        </div>
+        <p class="text-neutral-400 text-sm">Επανασχεδιασμός εφαρμογής mobile banking με έμφαση στην ταχύτητα και προσβασιμότητα.</p>
+      </article>
     </div>
   </main>
-  <footer class="border-t border-slate-900 py-6 text-center text-xs text-slate-600">
-    <p>&copy; 2026 Studio Mono &bull; Web Design & Development</p>
-  </footer>
 </body>
 </html>

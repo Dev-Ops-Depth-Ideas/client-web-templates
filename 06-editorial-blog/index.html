@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Journal - Live Demo</title>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Journal | Σημειώσεις Τεχνολογίας, Αρχιτεκτονικής & Σκέψης</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between font-sans">
-  <header class="border-b border-slate-800 px-6 py-4 flex justify-between items-center max-w-6xl mx-auto w-full">
-    <a href="../" class="text-xs text-slate-400 hover:text-white transition">&larr; Πίσω στον Κατάλογο</a>
-    <div class="font-bold text-rose-400">The Journal</div>
-    <a href="#contact" class="text-xs bg-rose-500 text-slate-950 px-3 py-1.5 rounded font-semibold hover:opacity-90 transition">Επικοινωνία</a>
-  </header>
-  <main class="max-w-4xl mx-auto px-6 py-24 text-center flex-1 flex flex-col justify-center items-center">
-    <span class="text-xs uppercase tracking-widest text-rose-400 border border-rose-500/30 px-3 py-1 rounded-full mb-6 bg-rose-950/40">
-      06-editorial-blog
-    </span>
-    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-      The Journal
-    </h1>
-    <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8">
-      Μίνιμαλ blog/newsletter για άρθρα & ειδήσεις. Πλήρως προσαρμόσιμο σε γραφικά, κείμενα και λειτουργίες για τις ανάγκες σας.
-    </p>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="#contact" class="bg-rose-500 text-slate-950 font-semibold px-6 py-3 rounded-lg shadow-lg hover:opacity-95 transition">
-        Ζητήστε Προσφορά
-      </a>
-      <a href="../" class="border border-slate-800 hover:bg-slate-900 text-slate-300 font-semibold px-6 py-3 rounded-lg transition">
-        Άλλα Πρότυπα
-      </a>
+<body class="bg-[#faf9f6] text-[#1c1917] font-serif antialiased">
+  <div class="max-w-3xl mx-auto px-6 py-12">
+    <header class="border-b-2 border-[#1c1917] pb-6 mb-12 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight">The Journal</h1>
+      <p class="text-sm font-sans text-stone-600 mt-2 tracking-wide uppercase">Εβδομαδιαία δοκίμια για συστήματα, κώδικα και μινιμαλισμό</p>
+    </header>
+
+    <!-- Main Article -->
+    <article class="mb-16">
+      <div class="text-xs font-sans font-semibold uppercase tracking-wider text-rose-700 mb-2">Κύριο Άρθρο &bull; 8 λεπτά ανάγνωσης</div>
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight hover:text-stone-700 cursor-pointer">
+        Γιατί η απλότητα παραμένει η πιο δύσκολη τεχνική επιλογή
+      </h2>
+      <p class="text-stone-500 text-xs font-sans mt-2 mb-4">14 Σεπτεμβρίου 2026 &bull; Από τον Γιώργο Δημητρίου</p>
+      <p class="text-lg leading-relaxed text-stone-800 font-normal">
+        Στη σύγχρονη εποχή των υπερβολικά περίπλοκων stacks και microservices, το να χτίσεις κάτι που λειτουργεί απλά, γρήγορα και κατανοητά απαιτεί περισσότερη πειθαρχία από ποτέ. Η αρχιτεκτονική δεν κρίνεται από τα εργαλεία που προσθέτεις, αλλά από αυτά που μπορείς να αφαιρέσεις χωρίς να χαθεί η αξία...
+      </p>
+    </article>
+
+    <!-- Feed -->
+    <section class="border-t border-stone-300 pt-8 space-y-8 font-sans">
+      <div class="flex justify-between items-baseline gap-4">
+        <div>
+          <h3 class="text-xl font-serif font-bold text-stone-900 hover:text-rose-700 cursor-pointer">Αυτοματισμοί χωρίς εξαρτήσεις (Zero-Dep CI/CD)</h3>
+          <p class="text-xs text-stone-500 mt-1">Πώς να στήνετε pipelines χωρίς third-party bloat.</p>
+        </div>
+        <span class="text-xs text-stone-400 font-mono shrink-0">10 Σεπ</span>
+      </div>
+      <div class="flex justify-between items-baseline gap-4">
+        <div>
+          <h3 class="text-xl font-serif font-bold text-stone-900 hover:text-rose-700 cursor-pointer">Η επιστροφή του static web hosting</h3>
+          <p class="text-xs text-stone-500 mt-1">Γιατί τα edge CDNs επανακαθορίζουν το latency.</p>
+        </div>
+        <span class="text-xs text-stone-400 font-mono shrink-0">04 Σεπ</span>
+      </div>
+    </section>
+
+    <!-- Newsletter Box -->
+    <div class="mt-16 bg-stone-200/60 p-8 rounded-xl font-sans border border-stone-300 text-center">
+      <h4 class="font-serif font-bold text-xl text-stone-900 mb-2">Εγγραφή στο Newsletter</h4>
+      <p class="text-xs text-stone-600 mb-4">Λάβετε τα νέα άρθρα απευθείας στο inbox σας. Χωρίς spam, ποτέ.</p>
+      <div class="flex max-w-md mx-auto gap-2">
+        <input type="email" placeholder="email@domain.gr" class="w-full px-4 py-2 text-sm rounded border border-stone-400 outline-none">
+        <button class="bg-stone-900 text-white text-sm font-semibold px-5 py-2 rounded shrink-0">Εγγραφή</button>
+      </div>
     </div>
-  </main>
-  <footer class="border-t border-slate-900 py-6 text-center text-xs text-slate-600">
-    <p>&copy; 2026 The Journal &bull; Web Design & Development</p>
-  </footer>
+  </div>
 </body>
 </html>
